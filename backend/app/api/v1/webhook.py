@@ -22,7 +22,7 @@ async def github_webhook(
 
     logger.info(
         "github_webhook_received",
-        event=x_github_event,
+        github_event=x_github_event,
         action=action,
         repo=payload.get("repository", {}).get("full_name", "unknown"),
     )
